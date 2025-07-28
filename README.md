@@ -39,12 +39,12 @@ pip install -r requirements.txt
 Edit the top of `app.py`:
 
 python
-MODEL_NAME          = 'sentence-transformers/all-MiniLM-L6-v2'
-TOP_N               = 10
-SIM_THRESHOLD_RATIO = 0.6    # keep sections ≥60% of top score
-NGRAM_N             = 3      # bigrams for phrase filtering
-ALPHA               = 0.3    # last-word boost weight
-BETA                = 0.6    # IDF-weighted keyphrase blend weight
+- MODEL_NAME          = 'sentence-transformers/all-MiniLM-L6-v2'
+- TOP_N               = 10
+- SIM_THRESHOLD_RATIO = 0.6    # keep sections ≥60% of top score
+- NGRAM_N             = 3      # bigrams for phrase filtering
+- ALPHA               = 0.3    # last-word boost weight
+- BETA                = 0.6    # IDF-weighted keyphrase blend weight
 
 
 Adjust these to trade off precision vs. recall.
